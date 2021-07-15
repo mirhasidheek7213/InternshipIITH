@@ -36,7 +36,7 @@ print(m)
 x_AB=line_gen(A,B)
 
 
-plt.plot(x_AB[0,:],x_AB[1,:],label='$2x-3y+6=0$')
+plt.plot(x_AB[0,:],x_AB[1,:])
 
 
 plt.grid() # minor
@@ -48,7 +48,6 @@ plt.text(B[0] * (1 - 0.2), B[1] * (1) , 'B')
 
 plt.xlabel('$x$')
 plt.ylabel('$y$')
-plt.legend(loc='upper left')
+
 
 plt.show()
-
