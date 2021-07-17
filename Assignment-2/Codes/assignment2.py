@@ -30,9 +30,6 @@ x2=0
 y1=0
 y2=2
 
-m=(y2-y1)/(x2-x1)
-print(m)
-
 x_AB=line_gen(A,B)
 
 
