@@ -31,6 +31,7 @@
 \usepackage[breaklinks=true]{hyperref}
 \usepackage{graphicx}
 \usepackage{tkz-euclide}
+\usepackage{amsmath}
 
 \usetikzlibrary{calc,math}
 \usepackage{listings}
@@ -152,27 +153,42 @@ Given, x-intercept=-3, y-intercept = 2\\
 \end{equation}
 \\
 Hence , the line cuts through the x-axis at \myvec{-3\\ 0} and the line cuts through the y-axis at \myvec{0\\ 2}
+\begin{equation}
+A = \myvec{-3\\0} , B = \myvec{0\\2}   
+\end{equation}
+
+
+\\
+\\
+\\
+The direction vector of the line = $\myvec{-3\\2}$
 \\
 
+Therefore, normal vector(n) of the line = $\myvec{2\\-3}$
+\\
+\begin{equation}
+   n^T = \myvec{2 \ -3}
+\end{equation}
 
+Equation of a line is,
 \begin{align}
-    A= \myvec{-3\\ 0} , B= \myvec{0\\ 2}
+\mathbf{n^T(x-A)=0}
 \end{align}
- Equation of a line is,
+We find the equation of line by,
+
  \begin{equation}
- r = A+\lambda(B-A)\\
+\mathbf{n^Tx=n^TA}
 \end{equation}
 \begin{equation}
-B-A = \myvec{0-(-3)\\ 2-0}
-\\
+\myvec{2 \ -3}x = \myvec{2 \ -3}\myvec{-3\\  0}
 \end{equation}
-\begin{equation}\label{eq:1}
-=\myvec{3\\2}
+\begin{equation}
+=\myvec{2 \ -3}x  = -6
       \end{equation} 
 \\
-Hence, the equation of line by substituting \ref{eq:1} is,
+Therefore, the equation of the line is,
 \begin{equation}
-    r=\myvec{-3\\ 0}+\lambda{\myvec {3 \\2}}  
+\myvec{2 \ -3}x  = -6
 \end{equation}
 \\
 
@@ -182,7 +198,7 @@ Since the line passes through the points $\myvec{-3\\0}$ and $\myvec{0\\2}$, The
 \begin{figure}[!h]
          \centering
          \includegraphics[width= \columnwidth]{Figure.png}
-         \caption{The line $r=\myvec{-3\\ 0}+\lambda{\myvec {3 \\2}}$ }
+         \caption{The line $\myvec{2 \ -3}x  = -6$ }
          \label{Figure}
 \end{figure}
 \end{document}
