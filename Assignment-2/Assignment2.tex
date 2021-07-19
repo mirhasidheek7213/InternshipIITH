@@ -17,7 +17,7 @@
 \usepackage{cite}
 \usepackage{cases}
 \usepackage{subfig}
-
+ 
 \usepackage{longtable}
 \usepackage{multirow}
 
@@ -161,37 +161,83 @@ Hence , the line cuts through the x-axis at \myvec{-3\\ 0} and the line cuts thr
 \\
 \\
 \\
-The direction vector of the line = $\myvec{-3\\2}$
+Let the line equation be,
+\begin{equation}
+    \vec{n^T}x=1
+\end{equation}
 \\
-
-Therefore, normal vector(n) of the line = $\myvec{2\\-3}$
+Then,
+\begin{equation}
+    \vec{n^T}A=1 \implies \vec{A^T}n=1
+\end{equation}
+\begin{equation}
+\vec{n^T}B=1 \implies \vec{B^T}n=1
+\end{equation}
 \\
 \begin{equation}
-\vec{n^T} = \myvec{2 \ -3}
+ \vec{A^T}=\myvec{-3 \ 0} ,  \vec{B^T}=\myvec{0 \ 2}
 \end{equation}
-
-Equation of a line is,
+\\
+We find n by augmenting the matrix below and doing row reduction on it.
 \begin{align}
-\vec{n^T(x-A)=0}
+\myvec{A^T \\ B^T}n = \myvec{1\\1}\label{eq:1}
 \end{align}
-We find the equation of line by,
+Substituting values in \ref{eq:1} ,
 
  \begin{equation}
-\vec{n^Tx=n^TA}
+\left( \begin{array}{cc}
+-3 & 0 \\
+0 & 2
+\end{array} \right)n
+=
+\left( \begin{array}{cc}
+ 1\\
+1
+\end{array} \right)
+\end{equation}
+This can be row reduced as follows
+\begin{equation}
+\myvec{-3 & 0 & 1\\0 & 2 & 1} 
+\xleftrightarrow [R_1\leftarrow R_1/-3]{R_2\leftarrow R_2/2}
+=
+\myvec{1 & 0 & \frac{-1}{3}\\0 & 1 & \frac{1}{2}}
+\end{equation}
+\\
+\\
+The left part is converted into identity matrix and the normal vector(n) is $\myvec{\frac{-1}{3}\\\frac{1}{2}}$
+ie,
+\begin{equation}
+    \vec{n} = \myvec{\frac{-1}{3}\\ \frac{1}{2}}
 \end{equation}
 \begin{equation}
-\myvec{2 \ -3}x = \myvec{2 \ -3}\myvec{-3\\  0}
-\end{equation}
-\begin{equation}
-=\myvec{2 \ -3}x  = -6
+\vec{n^T}  = \myvec{\frac{-1}{3}\ \frac{1}{2}}
       \end{equation} 
+
 \\
-Therefore, the equation of the line is,
+The equation of the line is found out by,
 \begin{equation}
-\myvec{2 \ -3}x  = -6
+\vec{n^T}x = \vec{n^T}A
 \end{equation}
 \\
-
+\begin{equation}
+\myvec{\frac{-1}{3}\ \frac{1}{2}}x =  \myvec{\frac{-1}{3}\ \frac{1}{2}}\myvec{-3 \\ 0}
+\end{equation}
+\\
+\begin{equation}
+= \myvec{\frac{-1}{3}\ \frac{1}{2}}x = 1
+\end{equation}
+\\
+ Therefore, the equation of line is,
+\begin{equation}
+  \myvec{\frac{-1}{3}\ \frac{1}{2}}x = 1
+\end{equation}
+\\
+\\
+\\
+\\
+\\
+\\
+\\
 Since the line passes through the points $\myvec{-3\\0}$ and $\myvec{0\\2}$, The line AB is plotted using these points as shown below.
 
 
