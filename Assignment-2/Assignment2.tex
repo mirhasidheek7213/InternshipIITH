@@ -163,15 +163,15 @@ Hence , the line cuts through the x-axis at \myvec{-3\\ 0} and the line cuts thr
 \\
 Let the line equation be,
 \begin{equation}
-    \vec{n^T}x=1
+    \vec{n^Tx}=1
 \end{equation}
 \\
 Then,
 \begin{equation}
-    \vec{n^T}A=1 \implies \vec{A^T}n=1
+    \vec{n^TA}=1 \implies \vec{A^Tn}=1
 \end{equation}
 \begin{equation}
-\vec{n^T}B=1 \implies \vec{B^T}n=1
+\vec{n^TB}=1 \implies \vec{B^Tn}=1
 \end{equation}
 \\
 \begin{equation}
@@ -180,7 +180,7 @@ Then,
 \\
 We find n by augmenting the matrix below and doing row reduction on it.
 \begin{align}
-\myvec{A^T \\ B^T}n = \myvec{1\\1}\label{eq:1}
+\myvec{\vec{A^T} \\ \vec{B^T}}n = \myvec{1\\1}\label{eq:1}
 \end{align}
 Substituting values in \ref{eq:1} ,
 
@@ -216,7 +216,7 @@ ie,
 \\
 The equation of the line is found out by,
 \begin{equation}
-\vec{n^T}x = \vec{n^T}A
+\vec{n^Tx} = \vec{n^TA}
 \end{equation}
 \\
 \begin{equation}
