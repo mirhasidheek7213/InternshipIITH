@@ -143,16 +143,16 @@ and latex-tikz codes from
 https://github.com/mirhasidheek7213/InternshipIITH/blob/main/Assignment-2/Assignment2.tex
 \end{lstlisting}
 
-\section{Question No. 1.23 - Linear forms}\\
+\section{Question No. 1.23 - Linear forms}
 
  Find the equation of the line, which makes intercepts $-3$ and $2$ on the $x$ and $y$ axes respectively.
 %
 \section{Solution}
 \begin{equation}
-Given, x-intercept=-3, y-intercept = 2\\
+Given, x-intercept=-3, y-intercept = 2
 \end{equation}
 
-Hence , the line cuts through the x-axis at \myvec{-3\\ 0} and the line cuts through the y-axis at \myvec{0\\ 2}\\
+Hence , the line cuts through the x-axis at \myvec{-3\\ 0} and the line cuts through the y-axis at \myvec{0\\ 2}
 \begin{equation}
 \vec{A} = {\myvec{-3\\0} , \vec{B} = \myvec{0\\2}}
 \end{equation}
@@ -176,19 +176,18 @@ Then,
  \vec{A^T}=\myvec{-3 \ 0} ,  \vec{B^T}=\myvec{0 \ 2}
 \end{equation}
 
-We find n by augmenting the matrix below and doing row reduction on it.\\
+We find n by augmenting the matrix below and doing row reduction on it.
 \begin{align}
 \myvec{\vec{A^T} \\ \vec{B^T}}\vec{n} = \myvec{1\\1}\label{eq:1}
 \end{align}
-Substituting values in \ref{eq:1} ,\\
+Substituting values in \ref{eq:1} ,
 
  \begin{equation}
-\mymacromyvec{-3 & 0 \\0 & 2}\vec{n}
- 1\\
-1
-\end{array} \right)
+\myvec{-3 & 0 \\0 & 2}\vec{n}
+=
+\myvec{1\\1}
 \end{equation}
-This can be row reduced as follows\\
+This can be row reduced as follows
 \begin{equation}
 \myvec{-3 & 0 & 1\\0 & 2 & 1} 
 \xleftrightarrow [R_1\leftarrow R_1/-3]{R_2\leftarrow R_2/2}
@@ -196,7 +195,7 @@ This can be row reduced as follows\\
 \myvec{1 & 0 & \frac{-1}{3}\\0 & 1 & \frac{1}{2}}
 \end{equation}
 
-The left part is converted into identity matrix and the normal vector(n) is $\myvec{\frac{-1}{3}\\\frac{1}{2}}$\\
+The left part is converted into identity matrix and the normal vector(n) is $\myvec{\frac{-1}{3}\\\frac{1}{2}}$
 
 Multiplying n with 6 
 ie,\\
@@ -208,7 +207,7 @@ ie,\\
       \end{equation} 
 
 
-The equation of the line is found out by,\\
+The equation of the line is found out by,
 \begin{equation}
 \vec{n^Tx} = \vec{n^TA}
 \end{equation}
@@ -221,7 +220,7 @@ The equation of the line is found out by,\\
 = \myvec{{-2}\ {3}}\vec{x} = 6
 \end{equation}
 
- Therefore, the equation of line is,\\
+ Therefore, the equation of line is,
 \begin{equation}
    \myvec{{-2}\ {3}}\vec{x} = 6
 \end{equation}
