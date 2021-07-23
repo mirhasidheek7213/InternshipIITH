@@ -161,24 +161,24 @@ Hence , the line cuts through the x-axis at \myvec{-3\\ 0} and the line cuts thr
 
 Let the line equation be,
 \begin{equation}
-    \vec{n^Tx}=1
+    \vec{n^\top}\vec{x}=1
 \end{equation}
 
 Then,
 \begin{equation}
-    \vec{n^TA}=1 \implies \vec{A^Tn}=1
+    \vec{n^\top}\vec{A}=1 \implies \vec{A^\top}\vec{n}=1
 \end{equation}
 \begin{equation}
-\vec{n^TB}=1 \implies \vec{B^Tn}=1
+\vec{n^\top}\vec{B}=1 \implies \vec{B^\top}\vec{n}=1
 \end{equation}
 
 \begin{equation}
- \vec{A^T}=\myvec{-3 \ 0} ,  \vec{B^T}=\myvec{0 \ 2}
+ \vec{A^\top}=\myvec{-3 \ 0} ,  \vec{B^\top}=\myvec{0 \ 2}
 \end{equation}
 
 We find n by augmenting the matrix below and doing row reduction on it.
 \begin{align}
-\myvec{\vec{A^T} \\ \vec{B^T}}\vec{n} = \myvec{1\\1}\label{eq:1}
+\myvec{\vec{A^\top} \\ \vec{B^\top}}\vec{n} = \myvec{1\\1}\label{eq:1}
 \end{align}
 Substituting values in \ref{eq:1} ,
 
@@ -203,13 +203,13 @@ ie,\\
     \vec{n} = \myvec{{-2}\\ {3}}
 \end{equation}
 \begin{equation}
-\vec{n^T}  = \myvec{{-2}\ {3}}
+\vec{n^\top}  = \myvec{{-2}\ {3}}
       \end{equation} 
 
 
 The equation of the line is found out by,
 \begin{equation}
-\vec{n^Tx} = \vec{n^TA}
+\vec{n^\top}\vec{x} = \vec{n^\top}\vec{A}
 \end{equation}
 
 \begin{equation}
