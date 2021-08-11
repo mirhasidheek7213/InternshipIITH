@@ -159,7 +159,7 @@ Area matrix is,
 \end{align}
 
 \begin{align}
-   \implies\myvec{
+   = \myvec{
     1 & 1 & 1 \\ 
     2 & 5 & k \\ 
     -6 & 4 & 4}
@@ -172,35 +172,48 @@ Area matrix is,
 
 \begin{align}
    \implies  \frac12 \times  \mydet{1 & 1 & 1  \\ 
-\vec{A} & \vec{B} & \vec{C}}=35
+\vec{A} & \vec{B} & \vec{C}}
 \end{align}
 
 \begin{align}
-\implies  \frac12 \times  \mydet{1 & 1 & 1  \\ 
+=  \frac12 \times  \mydet{1 & 1 & 1  \\ 
  2 & 5 & k \\ 
--6 & 4 & 4}=35
+-6 & 4 & 4}
 \end{align}
 
+ By using coloumn operation,
 
 \begin{align}
-   \implies \frac12 \times \brak{1[20-4k]-1[8+6k]+1[8+30]}=35
-\end{align}
-\begin{align}
-  \implies 50-10k = 70
-\end{align}
-
-\begin{align}
-  \implies 10k = -20
+   \mydet{1 & 1 & 1  \\ 
+ 2 & 5 & k \\ 
+-6 & 4 & 4}
+\xleftrightarrow [C_2-C_3\rightarrow C_2]{C_1-C_3\rightarrow C_1}
 \end{align}
 
 \begin{align}
-   \implies k= -2
+ \mydet{0 & 0 & 1  \\ 
+ 2-k & 5-k & k \\ 
+10 & 0 & 4}
 \end{align}
 
+\begin{align}
+ Determinant = 10(5-k)
+\end{align}
+Since area of triangle is half of the determinant of area matrix,
+\begin{align}
+   \frac{1}{2}10(5-k) = 35
+\end{align}
+
+\begin{align}
+   \implies 50-10k = 70
+\end{align}
+
+\begin{align}
+  \implies  k = -2
+\end{align}
 \begin{figure}[!h]
          \centering
          \includegraphics[width=\columnwidth]{Figure.png}
          \caption{Plot of the triangle}
          \label{Figure}
 \end{figure}
-\end{document}
