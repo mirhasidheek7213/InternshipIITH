@@ -171,7 +171,7 @@ B = np.array([5,4])
 C = np.array([-2,4]) 
 
 
-Area_Matrix = np.array([[1,2,-6], [1, 5, 4], [1,-2,4]]) 
+Area_Matrix = np.array([A, B, C]) 
 area = 1/2*np.abs(np.linalg.det(Area_Matrix))
 print("Area of Triangle = ", area, "sq.units" )
 
