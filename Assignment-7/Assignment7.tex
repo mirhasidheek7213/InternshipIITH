@@ -1,0 +1,210 @@
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+
+\usepackage{setspace}
+\usepackage{gensymb}
+
+\singlespacing
+
+
+\usepackage[cmex10]{amsmath}
+
+\usepackage{amsthm}
+
+\usepackage{mathrsfs}
+\usepackage{txfonts}
+\usepackage{stfloats}
+\usepackage{bm}
+\usepackage{cite}
+\usepackage{cases}
+\usepackage{subfig}
+
+\usepackage{longtable}
+\usepackage{multirow}
+
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{steinmetz}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{verbatim}
+\usepackage{tfrupee}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{graphicx}
+\usepackage{tkz-euclide}
+\usepackage{float}
+
+\usetikzlibrary{calc,math}
+\usepackage{listings}
+    \usepackage{color}                                            %%
+    \usepackage{array}                                            %%
+    \usepackage{longtable}                                        %%
+    \usepackage{calc}                                             %%
+    \usepackage{multirow}                                         %%
+    \usepackage{hhline}                                           %%
+    \usepackage{ifthen}                                           %%
+    \usepackage{lscape}     
+\usepackage{multicol}
+\usepackage{chngcntr}
+
+\DeclareMathOperator*{\Res}{Res}
+
+\renewcommand\thesection{\arabic{section}}
+\renewcommand\thesubsection{\thesection.\arabic{subsection}}
+\renewcommand\thesubsubsection{\thesubsection.\arabic{subsubsection}}
+
+\renewcommand\thesectiondis{\arabic{section}}
+\renewcommand\thesubsectiondis{\thesectiondis.\arabic{subsection}}
+\renewcommand\thesubsubsectiondis{\thesubsectiondis.\arabic{subsubsection}}
+
+
+\hyphenation{op-tical net-works semi-conduc-tor}
+\def\inputGnumericTable{}                                 %%
+
+\lstset{
+%language=C,
+frame=single, 
+breaklines=true,
+columns=fullflexible
+}
+\begin{document}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\bibliographystyle{IEEEtran}
+\providecommand{\mbf}{\mathbf}
+\providecommand{\pr}[1]{\ensuremath{\Pr\left(#1\right)}}
+\providecommand{\qfunc}[1]{\ensuremath{Q\left(#1\right)}}
+\providecommand{\sbrak}[1]{\ensuremath{{}\left[#1\right]}}
+\providecommand{\lsbrak}[1]{\ensuremath{{}\left[#1\right.}}
+\providecommand{\rsbrak}[1]{\ensuremath{{}\left.#1\right]}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\lbrak}[1]{\ensuremath{\left(#1\right.}}
+\providecommand{\rbrak}[1]{\ensuremath{\left.#1\right)}}
+\providecommand{\cbrak}[1]{\ensuremath{\left\{#1\right\}}}
+\providecommand{\lcbrak}[1]{\ensuremath{\left\{#1\right.}}
+\providecommand{\rcbrak}[1]{\ensuremath{\left.#1\right\}}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+\newcommand{\sgn}{\mathop{\mathrm{sgn}}}
+\providecommand{\abs}[1]{\l\vert#1\r\vert}
+\providecommand{\res}[1]{\Res\displaylimits_{#1}} 
+\providecommand{\norm}[1]{\l\lVert#1\r\rVert}
+%\providecommand{\norm}[1]{\lVert#1\rVert}
+\providecommand{\mtx}[1]{\mathbf{#1}}
+\providecommand{\mean}[1]{E\l[ #1 \r]}
+\providecommand{\fourier}{\overset{\mathcal{F}}{ \rightleftharpoons}}
+%\providecommand{\hilbert}{\overset{\mathcal{H}}{ \rightleftharpoons}}
+\providecommand{\system}{\overset{\mathcal{H}}{ \longleftrightarrow}}
+	%\newcommand{\solution}[2]{\textbf{Solution:}{#1}}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\newcommand{\cosec}{\,\text{cosec}\,}
+\providecommand{\dec}[2]{\ensuremath{\overset{#1}{\underset{#2}{\gtrless}}}}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\numberwithin{equation}{subsection}
+\makeatletter
+\@addtoreset{figure}{problem}
+\makeatother
+\let\StandardTheFigure\thefigure
+\let\vec\mathbf
+\renewcommand{\thefigure}{\theproblem}
+\def\putbox#1#2#3{\makebox[0in][l]{\makebox[#1][l]{}\raisebox{\baselineskip}[0in][0in]{\raisebox{#2}[0in][0in]{#3}}}}
+     \def\rightbox#1{\makebox[0in][r]{#1}}
+     \def\centbox#1{\makebox[0in]{#1}}
+     \def\topbox#1{\raisebox{-\baselineskip}[0in][0in]{#1}}
+     \def\midbox#1{\raisebox{-0.5\baselineskip}[0in][0in]{#1}}
+\vspace{3cm}
+\title{Assignment 7 }
+\author{Mirha Sidheek }
+\maketitle
+\newpage
+\bigskip
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+Download all python codes from 
+\begin{lstlisting}
+https://github.com/mirhasidheek7213/InternshipIITH/tree/main/Assignment-7/Codes
+\end{lstlisting}
+%
+and latex-tikz codes from 
+%
+\begin{lstlisting}
+https://github.com/mirhasidheek7213/InternshipIITH/tree/main/Assignment-7/Assignment7.tex
+\end{lstlisting}
+%
+\section{Question No. 2.2 - Linear Inequalities}
+Solve the following system of inequalities graphically.\\
+5x+4y $\leq$ 40,x $\geq$ 2,y $\geq$ 3
+\section{Solution}
+The given system of inequality can be written in matrix form as
+\begin{align}
+    \myvec{-5 & -4 \\ 1 & 0 \\ 0 & 1}\vec{x} \succeq \myvec{-40\\2\\3}
+\end{align}
+Let the surplus vector be
+\begin{align}
+    \vec{u} &= \myvec{u_1\\u_2} \succeq 0
+\end{align}
+The first pair of inequality can be solved as,
+\begin{enumerate}
+    \item 
+    \begin{align}
+        \myvec{-5 & -4 \\ 1 & 0}\vec{x} &\succeq \myvec{-40 \\ 2}
+        \\
+        \implies  \myvec{-5 & -4 \\ 1 & 0}\vec{x} &= \myvec{-40 \\ 2} + \vec{u}
+    \end{align}
+    resulting in 
+    \begin{align}
+        \vec{x} &= \myvec{-5 & -4 \\1 & 0}^{-1}\myvec{-40 \\ 2} + \myvec{-5 & -4 \\1 & 0}^{-1}\vec{u}
+        \\
+        \implies \vec{x} &= \myvec{2 \\\frac{15}{2}} + \myvec{0 & 1\\ \frac{-1}{4} & \frac{-5}{4}}\vec{u}   \label{eq1}
+    \end{align}
+    \\
+    \\
+    Similarly, solving 2nd pair of inequality
+    \item 
+    
+    \begin{align}
+        \myvec{-5 & -4\\ 0 & 1}\vec{x} &\succeq \myvec{-40 \\ 3}
+        \\
+        \implies  \myvec{-5 & -4 \\ 1 & 0}\vec{x} &= \myvec{-40 \\ 3} + \vec{u}
+    \end{align}
+    resulting in 
+    
+    \begin{align}
+        \vec{x} &= \myvec{-5 & -4 \\0 & 1}^{-1}\myvec{-40 \\ 3} + \myvec{-5 & -4 \\0 & 1}^{-1}\vec{u}
+        \\
+        \implies \vec{x} &= \myvec{\frac{28}{5} \\3} + \myvec{\frac{-1}{5} & \frac{-4}{5}\\ 0 & 1}\vec{u} \label{eq2}
+    \end{align}
+    
+\end{enumerate}
+Now,solution region which is common to regions of eq. \eqref{eq1} and eq. \eqref{eq2},is given by
+\begin{align}
+    \boxed{\vec{x} = \myvec{2 \\ 3}+\myvec{0 & 1\\ \frac{1}{20} & \frac{-21}{20}}\vec{u}}
+\end{align}
+
+\numberwithin{figure}{section}
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=\columnwidth]{Figure1.png}
+\caption{Solution Region}
+\label{fig:fig1}	
+\end{figure}
+
+\numberwithin{figure}{section}
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=\columnwidth]{Figure2.png}
+\caption{Magnified Solution Region}
+\label{fig:fig2}	
+\end{figure}
+\end{document}
