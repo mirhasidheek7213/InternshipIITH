@@ -143,48 +143,6 @@ https://github.com/mirhasidheek7213/InternshipIITH/blob/main/Assignment-6/Assign
 Maximise $Z=x+y$, subject to the constraints: $x-y \leq -1$, $-x+y \leq 0$, $x,y\geq0$.
 \section{SOLUTION}
 
-In order to obtain the maximum value we need to solve the system of inequalities by adding slack variables. The equations become:
-\begin{align}
-     Z - x- y =0
-    \\
-    x - y + S_1 = -1
-    \\
-    -x + y + S_2 = 0
-\end{align}
-The simplex tableau can be formed as
-\begin{align}
-    \myvec{x & y & s_1 & s_2 & c \\
-    1 & -1 & 1 & 0 & -1 \\
-    -1 & 1 & 0 & 1 & 0 \\\hline
-    -1 & -1 & 0 & 0 & 0}
-\end{align}
-Using Gauss jordan elimination by keeping the pivot element as -1 and the reduced form is given below.
-\begin{align}
-     \myvec{x & y & s_1 & s_2 & c \\
-    1 & 0 & 0 & \frac{-1}{2} & 0 \\
-    0 & 1 & 0 & \frac{1}{2} & 0 \\\hline
-    0 & 0 & 1 & 1 & -1}
-\end{align}
-In this tableau, there are no negative elements
-in the bottom row.Therefore, the optimal solution is determined as:
-
-\begin{align}
-   \brak{x,y,s_1,s_2} = \brak{\frac{1}{2},\frac{-1}{2},0,0}
-\end{align}
-
-\begin{align}
-    Z= x+y
-\end{align}
-
-\begin {align}
-Z=\frac{1}{2}+\frac{-1}{2}
-\end{align}
-
-\begin{align}
-    Z=0
-\end{align}
-
-Since $Z=0$, there is no maximum value hence no feasible region\\
 
 This can be solved in Python which generates the result as shown in the Figure. \\
 \begin{figure}[h]
@@ -214,5 +172,5 @@ Solving for Z by this reduction method we get
 \begin{align}
     Max Z = None
 \end{align}
-
+There is no optimal maximum solution for this.
 \end{document}
